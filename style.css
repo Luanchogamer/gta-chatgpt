@@ -1,0 +1,67 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #f3f8ff;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #02030a;
+}
+
+#scene {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#hud {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  background: rgba(4, 7, 20, 0.62);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(150, 190, 255, 0.25);
+  border-radius: 10px;
+  padding: 10px 14px;
+  min-width: 320px;
+}
+
+#hud h1 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+}
+
+#hud p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+#hud .hint {
+  margin-top: 10px;
+  opacity: 0.75;
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 15;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 14px;
+  background: radial-gradient(circle at 40% 20%, #1d335f 0%, #04050d 62%);
+}
+
+#overlay button {
+  justify-self: center;
+  padding: 12px 26px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #3f7fff, #52e2ff);
+  color: #041026;
+  font-weight: 700;
+  cursor: pointer;
+}

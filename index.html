@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon District: Open World Prototype</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <h1>NEON DISTRICT</h1>
+      <p id="mission">Misión: Cargando...</p>
+      <p id="objective">Objetivo: --</p>
+      <p id="status">Estado: vivo</p>
+      <p id="ammo">Energía de arma: 100</p>
+      <p class="hint">WASD mover | Shift correr | Click disparar | E interactuar</p>
+    </div>
+    <div id="overlay">
+      <button id="start">Entrar al distrito</button>
+      <p>
+        Prototipo original inspirado en sandbox urbanos, sin usar marcas, personajes o nombres protegidos.
+      </p>
+    </div>
+    <canvas id="scene"></canvas>
+    <script type="module" src="src/game.js"></script>
+  </body>
+</html>
